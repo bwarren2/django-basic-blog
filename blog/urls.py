@@ -10,6 +10,5 @@ urlpatterns = patterns(
         views.EntryDetailView.as_view(),
         name='entry'
     ),
-    url(r'^styles/$', views.BootstrapView.as_view(), name='bootstrap_test'),
     url(r'^rss/$', EntryFeed(), name='entry_feed'),
 )

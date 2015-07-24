@@ -1,5 +1,5 @@
 # from django.shortcuts import render
-from django.views.generic import ListView, DetailView, TemplateView
+from django.views.generic import ListView, DetailView
 from .models import Entry
 
 
@@ -32,7 +32,3 @@ class EntryDetailView(DetailView):
 
         else:
             return Entry.public.get(pk=pk)
-
-
-class BootstrapView(TemplateView):
-    template_name = 'blog/bootstrap_test.html'
