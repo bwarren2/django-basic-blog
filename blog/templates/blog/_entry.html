@@ -1,0 +1,10 @@
+<div class='col-md-12'>
+    <div class='blog-entry'>
+    <h1 class='entry-title'>
+        <a href="{% url "blog:entry" entry_id=entry.id %}">{{entry.title}}</a>
+        <small>{{entry.description}}</small>
+    </h1>
+    <p>{{entry.content|safe}}</p>
+    <p class='entry-info'>{{entry.created}}</p>
+    </div>
+</div>
