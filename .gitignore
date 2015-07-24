@@ -1,3 +1,4 @@
 .pypirc
-dist
+dist/
 django_basic_blog.egg-info
+notes/
