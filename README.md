@@ -17,6 +17,8 @@ Include the blog URLconf in your project urls.py like this::
 
 Run `python manage.py migrate` to create the blog models.
 
+Add the settings vars for RSS fields: BLOG_TITLE and BLOG_DESCRIPTION.
+
 Start the development server and visit http://127.0.0.1:8000/admin/
    to create a poll (you'll need the Admin app enabled).
 
