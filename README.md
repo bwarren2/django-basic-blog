@@ -2,7 +2,7 @@
 
 DBB is a dead simple blog app.  It has entries and an RSS feed; not much else.  Entries are expected to be in raw html.
 
-## uick start
+## Quick start
 
 Add "blog" to your INSTALLED_APPS setting like this::
 
