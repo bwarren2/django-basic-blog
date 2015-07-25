@@ -12,7 +12,6 @@ from .managers import (
 )
 
 
-# Create your models here.
 class Entry(models.Model):
     PUBLICITIES = (
         (PUBLIC, 'Public'),
