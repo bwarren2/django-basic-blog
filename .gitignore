@@ -3,3 +3,5 @@ dist/
 django_basic_blog.egg-info
 notes/
 *.pyc
+*.sublime-workspace
+*.sublime-project
