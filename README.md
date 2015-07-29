@@ -21,7 +21,15 @@ Include the blog URLconf in your project urls.py like this:
 
 Run `python manage.py migrate` to create the blog models.
 
-Add the settings vars for RSS fields: BLOG_TITLE and BLOG_DESCRIPTION.
+Add the settings vars for RSS fields:
+
+    BLOG_TITLE
+    BLOG_DESCRIPTION
+
+and the override the default entries/page and RSS pagination if you want
+
+    BLOG_ENTRIES_PER_PAGE  // Default 20
+    BLOG_ENTRIES_PER_RSS  // Default 5
 
 Start the development server and visit http://127.0.0.1:8000/admin/
    to create an entry (you'll need the Admin app enabled).
