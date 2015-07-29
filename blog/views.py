@@ -12,6 +12,8 @@ from .models import Entry
 
 class EntryListView(ListView):
 
+    template_name = 'blog/entry_list.html'
+
     def get_queryset(self):
         if self.request.user.is_superuser:
             qs = Entry.private.all()
@@ -44,6 +46,7 @@ class EntryListView(ListView):
 class EntryDetailView(DetailView):
     model = Entry
     pk_url_kwarg = 'entry_id'
+    template_name = 'blog/entry_detail.html'
 
     def get_object(self):
         try:
