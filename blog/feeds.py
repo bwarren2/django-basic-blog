@@ -4,9 +4,11 @@ from .models import Entry
 
 
 class EntryFeed(Feed):
-    title = settings.BLOG_TITLE
+    title = getattr(settings, 'BLOG_TITLE', 'My Blog')
     link = '/entries/'
-    description = settings.BLOG_DESCRIPTION
+    description = getattr(
+        settings, 'BLOG_DESCRIPTION', 'I have a Django Blog!'
+    )
     num_results = getattr(settings, 'BLOG_ENTRIES_PER_RSS', 5)
 
     def items(self):

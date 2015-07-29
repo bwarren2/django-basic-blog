@@ -23,8 +23,8 @@ Run `python manage.py migrate` to create the blog models.
 
 Add the settings vars for RSS fields:
 
-    BLOG_TITLE
-    BLOG_DESCRIPTION
+    BLOG_TITLE  // Default "My Blog"
+    BLOG_DESCRIPTION  // Default "I have a Django Blog!"
 
 and the override the default entries/page and RSS pagination if you want
 
