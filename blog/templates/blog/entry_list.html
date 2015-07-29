@@ -2,8 +2,15 @@
 
 {% block content %}
     <div class='row' id='entry-list'>
-    {% for entry in entry_list %}
-        {% include "blog/_entry.html" %}
-    {% endfor %}
+        {% if entry_list %}
+            {% for entry in entry_list %}
+                {% include "blog/_entry.html" %}
+            {% endfor %}
+        {% else %}
+            <div class='jumbotron'>
+            <h1>Your blog is online!</h1>
+            <p>Now try adding some entries!</p>
+            </div>
+        {% endif %}
     </div>
 {% endblock content %}
