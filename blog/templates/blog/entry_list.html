@@ -2,8 +2,8 @@
 
 {% block content %}
     <div class='row' id='entry-list'>
-        {% if entry_list %}
-            {% for entry in entry_list %}
+        {% if object_list %}
+            {% for entry in object_list %}
                 {% include "blog/_entry.html" %}
             {% endfor %}
         {% else %}
