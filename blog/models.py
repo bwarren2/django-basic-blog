@@ -18,6 +18,9 @@ class Entry(models.Model):
         (LOGIN, 'Login'),
         (PRIVATE, 'Private'),
     )
+    PUBLIC = PUBLIC
+    LOGIN = LOGIN
+    PRIVATE = PRIVATE
 
     title = models.CharField(max_length=200)
     description = models.CharField(max_length=200, default='')  # RSS
