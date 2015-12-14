@@ -3,7 +3,7 @@ machine:
     version: 2.7.5
 test:
   override:
-    - export PYTHONPATH=`pwd`:$PYTHONPATH; echo $PYTHONPATH; python test_project/manage.py test
+    - echo $PYTHONPATH; python test_project/manage.py test
 dependencies:
   override:
     - pip install -r test_project/requirements/test.py; pip install coveralls
