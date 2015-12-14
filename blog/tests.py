@@ -1,11 +1,13 @@
-from django.test import TestCase
-from blog.models import Entry
-from model_mommy import mommy
-from django.utils import timezone
 from datetime import timedelta
 
+from django.utils import timezone
+from django.test import TestCase
 
-# Create your tests here.
+from model_mommy import mommy
+
+from blog.models import Entry
+
+
 class EntryTestCase(TestCase):
 
     def setUp(self):

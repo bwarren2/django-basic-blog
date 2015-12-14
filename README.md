@@ -35,3 +35,23 @@ Start the development server and visit http://127.0.0.1:8000/admin/
    to create an entry (you'll need the Admin app enabled).
 
 Visit http://127.0.0.1:8000/blog/ to see the blog.
+
+
+## Development and Testing
+
+
+### Development
+
+Make a venv, install django.
+
+Set env var to the test settings
+
+`export DJANGO_SETTINGS_MODULE='test_projet.settings'`
+
+Start the server with `django-admin runserver`.
+
+To poke around with creating and displaying entries:
+
+Set up a superuser (`django-admin createsuperuser`) and hit the admin at `/admin` to try stuff out.
+
+### Testing

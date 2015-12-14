@@ -1,15 +1,19 @@
-{% extends "base.html" %}
+{% extends "blog/blog_base.html" %}
 
 {% block content %}
     <div class='row' id='entry-list'>
         {% if object_list %}
             {% for entry in object_list %}
-                {% include "blog/_entry.html" %}
+                <div class='col-md-12'>
+                    {% include "blog/_entry.html" %}
+                </div>
             {% endfor %}
         {% else %}
-            <div class='jumbotron'>
-            <h1>Your blog is online!</h1>
-            <p>Now try adding some entries!</p>
+            <div class='col-md-12'>
+                <div class='jumbotron'>
+                <h1>Your blog is online!</h1>
+                <p>Now try adding some entries!</p>
+                </div>
             </div>
         {% endif %}
     </div>

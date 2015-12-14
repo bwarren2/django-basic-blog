@@ -11,6 +11,9 @@ setup(
     name='django-basic-blog',
     version='0.10',
     packages=['blog'],
+    install_requires=[
+        'markdown',
+    ],
     include_package_data=True,
     license='MIT License',  # example license
     description='A stupid-simple blog app.',

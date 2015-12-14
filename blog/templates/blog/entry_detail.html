@@ -1,5 +1,9 @@
-{% extends "base.html" %}
+{% extends "blog/blog_base.html" %}
 
 {% block content %}
-{% include "blog/_entry.html" %}
+<div class='row' id='entry'>
+    <div class='col-md-12'>
+        {% include "blog/_entry.html" %}
+    </div>
+</div>
 {% endblock content %}

@@ -6,3 +6,4 @@ notes/
 *.sublime-workspace
 *.sublime-project
 .*
+*.sqlite3

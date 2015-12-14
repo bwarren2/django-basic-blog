@@ -1,0 +1,9 @@
+machine:
+  python:
+    version: 2.7.5
+test:
+  override:
+    - export PYTHONPATH=`pwd`; django-admin test
+dependencies:
+  override:
+    - pip install -r test_project/requirements/test.py; pip install coveralls
