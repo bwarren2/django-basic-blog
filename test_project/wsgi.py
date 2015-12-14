@@ -1,5 +1,5 @@
 """
-WSGI config for foobar project.
+WSGI config for django-basic-blog project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

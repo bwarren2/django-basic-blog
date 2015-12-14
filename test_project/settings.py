@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'django_nose',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -71,6 +72,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'test_project.wsgi.application'
 
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
