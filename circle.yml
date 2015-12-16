@@ -6,4 +6,4 @@ test:
     - echo $PYTHONPATH; python test_project/manage.py test
 dependencies:
   override:
-    - pip install -r test_project/requirements/test.py; pip install coveralls
+    - pip install -r test_project/requirements/test.txt; pip install coveralls
