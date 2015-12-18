@@ -4,6 +4,6 @@ from markdown import markdown
 register = template.Library()
 
 
-@register.filter('markdownify')
+@register.filter
 def markdownify(text):
     return markdown(text)
