@@ -7,3 +7,5 @@ notes/
 *.sublime-project
 .*
 *.sqlite3
+
+sample_project/static/

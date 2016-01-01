@@ -1,6 +1,9 @@
 from django.core.urlresolvers import reverse
 from django.db import models
 from django.utils import timezone
+
+from taggit.managers import TaggableManager
+
 from .fields import AutoDatetimeField
 from .managers import (
     PublicManager,
@@ -25,6 +28,8 @@ class Entry(models.Model):
     title = models.CharField(max_length=200)
     description = models.CharField(max_length=200, default='')  # RSS
     content = models.TextField()
+    script = models.TextField(null=True, blank=True)
+
     created = models.DateTimeField(default=timezone.now)
     modified = AutoDatetimeField(default=timezone.now)
     publicity = models.IntegerField(choices=PUBLICITIES, default=PRIVATE)
@@ -36,6 +41,8 @@ class Entry(models.Model):
     public = PublicManager()
     login = LoginManager()
     private = PrivateManager()
+
+    tags = TaggableManager()
 
     def __unicode__(self):
         return self.title

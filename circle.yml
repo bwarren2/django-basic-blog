@@ -1,9 +1,9 @@
 machine:
   python:
     version: 2.7.5
-test:
-  override:
-    - PYTHONPATH=`pwd`:$PYTHONPATH; python test_project/manage.py test
 dependencies:
   override:
-    - pip install -r test_project/requirements/test.py; pip install coveralls
+    - pip install -r sample_project/requirements/test.py; pip install coveralls
+test:
+  override:
+    - export PYTHONPATH=`pwd`; python sample_project/manage.py test
